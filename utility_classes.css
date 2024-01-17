@@ -27,3 +27,19 @@
 {
     padding: 0.5rem;
 }
+.font
+{
+    font-family: 'Martel Sans', sans-serif;
+}
+.w400
+{
+    font-weight: 400;
+}
+.w600
+{
+    font-weight: 600;
+}
+.btn
+{
+    cursor: pointer;
+}

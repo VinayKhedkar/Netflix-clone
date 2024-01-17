@@ -6,20 +6,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;600;700;900&family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="utility_classes.css">
     <title>Netflix - Clone</title>
 </head>
 <body>
-
-
     <div class="main">
 
         <nav>
             <span><img width="133" src="Images/netflix_logo.svg" alt=""></span>
             <div class="buttons">
-                <button class="text ">English</button>
-                <button class="sign-in text br h2">Sign In</button>
+                <button class="text btn lang br "><select name="lang" id="English"><option value="English"></option></select></button>
+                <button class="sign-in btn text br h2">Sign In</button>
             </div>
         </nav>
         <div class="box text"></div>
@@ -30,11 +29,19 @@
             <span class="h2">Ready to watch? Enter your email to create or restart your membership.</span>
             <div class="mail">
                 <div class="email">
-                    <input type="email" placeholder="Email Address" style="height: 100%; max-width: 60rem;" class="br">
-                    <button style="border: none; height: 100%;"; class="red br p-s h2 text"><a href="">Get started</a></button> 
+                    <input type="email" placeholder="Email Address" class="br font w600">
+                    <button style="border: none; height: 100%;"; class=" btn red br p-s h2 text"><a href="" style="padding: 0rem 0.2rem;" class="h2">Get started<i class="ri-arrow-right-s-line h2"></i></a></button> 
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="main2">
+        <div class="slogan">
+            <span class="h1">Enjoy on your TV</span>
+            <span class="h2">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</span>
+        </div>
+        <span><img src="Images/tv.png" alt=""></span>
     </div>
 </body>
 </html>

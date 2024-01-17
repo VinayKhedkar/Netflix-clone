@@ -1,6 +1,7 @@
 html
 {
     font-size: 62.5%;
+    /* overflow: hidden; */
 }
 
 a
@@ -18,12 +19,13 @@ a
 
 body
 {
-    background-color: black;
+    background-color: rgb(0,1,1);
 }
 
 :root
 {
     --color: red;
+    --prcolor: white;
 }
 
 .main
@@ -33,7 +35,7 @@ body
     position: relative;
     background-position: center;
     width: 100vw;
-    /* background-size: cover; */
+    border-bottom: 10px rgb(34,35,34) solid;
 }
 
 .main div.box
@@ -50,7 +52,8 @@ body
 nav img
 {
     color: red;
-    width: 14.8rem;
+    max-width: 14.8rem;
+    min-width: 7.4rem;
     z-index: 10;
     position: relative;
 }
@@ -62,6 +65,7 @@ nav
     padding: 2%;
     margin: auto;
     max-width: 70vw;
+    min-width: 40vh;
 }
 
 .slogan
@@ -79,6 +83,22 @@ nav
     font-weight: 900;
     object-fit:cover;
     color: white;
+}
+div.buttons
+{
+    display: flex;
+    gap: 10px;
+}
+button.lang
+{
+    background-color: var(--prcolor);
+    opacity: 0.8;
+    position: relative;
+    z-index: 10;
+    color: black;
+    padding: 0.5rem 1rem;
+
+
 }
 button.sign-in
 {
@@ -102,7 +122,8 @@ button.sign-in
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 .mail
 {
@@ -110,4 +131,16 @@ button.sign-in
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1rem 0rem;
+    
+}
+.email input
+{
+    background-color: inherit;
+    border: 0.5px white solid;
+    width: 300px;
+    height: 100%;
+    padding: 0rem 0.5rem;
+    color: white;
+    font-size: 1.5rem;
 }
