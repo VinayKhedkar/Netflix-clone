@@ -43,3 +43,9 @@
 {
     cursor: pointer;
 }
+.container
+{
+    background-color: rgb(34,35,34);
+    height: 10px;
+    width: 100vw;
+}

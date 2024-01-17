@@ -1,7 +1,6 @@
 html
 {
     font-size: 62.5%;
-    /* overflow: hidden; */
 }
 
 a
@@ -15,11 +14,13 @@ a
     margin: 0px;
     padding: 0px;
     border: none;
+
 }
 
 body
 {
     background-color: rgb(0,1,1);
+    overflow-x: hidden;
 }
 
 :root
@@ -36,6 +37,8 @@ body
     background-position: center;
     width: 100vw;
     border-bottom: 10px rgb(34,35,34) solid;
+    overflow: hidden;
+    
 }
 
 .main div.box
@@ -46,7 +49,6 @@ body
     opacity: 0.74;
     position: absolute;
     top: 0px;
-
 }
 
 nav img
@@ -144,3 +146,38 @@ button.sign-in
     color: white;
     font-size: 1.5rem;
 }
+section.first, section.second, section.third, section.fourth
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    margin: auto;
+    max-width: 70vw;
+    padding: 10%;
+}
+.secimg img
+{
+    max-width: 30vw;
+}
+section.first span
+{
+    text-align: left;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background:rgba(130, 134, 130, 0.94);
+  }
+  ::-webkit-scrollbar-corner {
+    background: #0c0c0c;
+  }
