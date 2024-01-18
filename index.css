@@ -60,6 +60,7 @@ nav img
     min-width: 7.4rem;
     z-index: 10;
     position: relative;
+    opacity: 0.9;
 }
 nav
 {
@@ -163,21 +164,50 @@ section.first, section.second, section.third, section.fourth
     position: relative;
 
 }
-.secimg video
-{
-    position: absolute;
-    top: 51px;
-    left: 0px;
-}
 .secimg 
 {
-    max-width: 30vw;
+    width: 30vw;
     position: relative;
     z-index: 10;
 }
 section.first span
 {
     text-align: left;
+}
+
+footer {
+    color: rgb(179,178,178);
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+footer a 
+{
+    font-size: 1.4rem;
+    color: rgb(179,178,178);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.footer-item
+{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    padding: 34px;
 }
 
 
@@ -237,13 +267,17 @@ section.first span
     {
         width: 90vw;
     }
+    input
+    {
+        text-align: left;
+    }
 }
 
-@media screen and (max-width:425px) 
+@media screen and (max-width:426px) 
 {
     html
     {
-        font-size: 33%;
+        font-size: 30%;
     }
     .email
     {
@@ -252,6 +286,14 @@ section.first span
     }
     .secimg
     {
-        width: 60vw;
+        width: 80vw;
+    }
+    input
+    {
+        text-align: left;
+    }
+    .slogan
+    {
+        height: 90%;
     }
 }
