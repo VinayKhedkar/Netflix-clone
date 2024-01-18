@@ -109,11 +109,11 @@ button.sign-in
     position: relative;
     background-color: red;
     z-index: 10;
-    font-size: 1.4rem;
+    font-size: 14px;
     font-weight: 400;
     width: fit-content;
-    padding: 0.5rem 1rem;
-    height: 3.2rem;
+    padding: 5px 10px;
+    height: 32px;
     border: none;
     text-align: center;
 }
@@ -295,5 +295,13 @@ footer a
     .slogan
     {
         height: 90%;
+    }
+    button.sign-in
+    {
+        font-size: 12px;
+        font-weight: 400;
+        width: fit-content;
+        padding: 3px 6px;
+        height: 22px;
     }
 }
