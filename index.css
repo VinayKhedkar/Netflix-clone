@@ -34,7 +34,7 @@ body
 .main
 {
     background-image: url(Images/background.jpg);
-    height: 80vh;
+    height: 95vh;
     position: relative;
     background-position: center;
     width: 100vw;
@@ -45,7 +45,7 @@ body
 
 .main div.box
 {
-    height: 80vh;
+    height: 95vh;
     width: 100%;
     background: black;
     opacity: 0.74;
@@ -88,6 +88,9 @@ nav
     object-fit:cover;
     color: white;
 }
+
+
+
 div.buttons
 {
     display: flex;
@@ -95,14 +98,27 @@ div.buttons
 }
 button.lang
 {
-    background-color: var(--prcolor);
-    opacity: 0.8;
+    background-color: black;
+    opacity: 0.5;
     position: relative;
     z-index: 10;
-    color: black;
+    /* color: black; */
     padding: 0.5rem 1rem;
 
-
+}
+select 
+{
+    font-size: 12px;
+    padding: 0rem 0.8rem;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #d4cdcd;
+}
+select option 
+{
+    background-color: black;
+    opacity: 0.4;
+    color: #d4cdcd;
 }
 button.sign-in
 {
@@ -117,38 +133,44 @@ button.sign-in
     border: none;
     text-align: center;
 }
+
+
+
 .email
 {
-    height: 5.6rem;
+    height: 50px;
     border-radius: 5px;
     border: none;
-    /* width: 58.6rem; */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+    gap: 10px;
     flex-wrap: wrap;
 }
 .mail
 {
-    width: 100vw;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem 0rem;
+    padding: 20px 0px;
     flex-wrap: wrap;
-    
+}
+button.started a
+{
+    font-size: 24px;
 }
 .email input
 {
     background-color: inherit;
     border: 0.5px white solid;
     width: 300px;
-    height: 100%;
-    padding: 0rem 0.5rem;
+    padding: 5px 15px;
     color: white;
-    font-size: 1.5rem;
+    font-size: 17px;
 }
+
+
+
+
 section.first, section.second, section.third, section.fourth
 {
     display: flex;
@@ -159,11 +181,10 @@ section.first, section.second, section.third, section.fourth
     max-width: 70vw;
     padding: 10%;
 }
-.secimg
-{
-    position: relative;
 
-}
+
+
+
 .secimg 
 {
     width: 30vw;
@@ -174,6 +195,18 @@ section.first span
 {
     text-align: left;
 }
+.repeat-email
+{
+    width: 92vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
 
 footer {
     color: rgb(179,178,178);
@@ -201,14 +234,29 @@ footer a
     gap: 23px;
 
 }
-
-
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    color: white;
+    color: rgb(179,178,178);
     padding: 34px;
 }
+.footer a {
+    font-size: 14px;
+    color: rgb(179,178,178);
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.email button
+{
+    height: 45px;
+}
+
+
 
 
 ::-webkit-scrollbar {
@@ -227,6 +275,21 @@ footer a
   ::-webkit-scrollbar-corner {
     background: #0c0c0c;
   }
+
+
+
+
+    @media screen and (max-width: 1022px) 
+    {
+
+        .footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            text-align: left;
+        }
+    }
+
 
 
 @media screen and (max-width:1240px) 
@@ -281,8 +344,40 @@ footer a
     }
     .email
     {
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        display: flex;
+        gap: 10px;
         flex-wrap: wrap;
+    }
+    .mail
+    {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0px;
+        flex-wrap: wrap;
+    }
+    button.started a
+    {
+        font-size: 14px;
+    }
+    .email input
+    {
+        background-color: inherit;
+        border: 0.5px white solid;
+        width: 200px;
+        padding: 3px 10px;
+        color: white;
+        font-size: 14px;
+        position: relative;
+    }
+    .email button
+    {
+        height: 32px;
+        position: relative;
     }
     .secimg
     {

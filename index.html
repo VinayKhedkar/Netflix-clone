@@ -17,7 +17,17 @@
         <nav>
             <img width="148" src="Images/netflix_logo.svg" alt=""> 
             <div class="buttons">
-                <button class="text btn lang br "><select name="lang" id="English"><option value="English"></option></select></button>
+                <button class="text btn lang br">
+                    <select class="sign-in">
+                        <option value="option1">English</option>
+                        <option value="option2">Hindi</option>
+                        <option value="option3">Marathi</option>
+                        <option value="option3">Bhojpuri</option>
+                        <option value="option3">Bengali</option>
+                        <option value="option3">Tamil</option>
+                        <option value="option3">Telugu</option>
+                      </select>                      
+                </button>
                 <button class="sign-in btn text br h2">Sign In</button>
             </div>
         </nav>
@@ -29,8 +39,12 @@
             <p class="h2">Ready to watch? Enter your email to create or restart your membership.</p>
             <div class="mail">
                 <div class="email">
-                    <input type="email" placeholder="Email Address" class="br font w600">
-                    <button style="border: none; height: 100%;"; class=" btn red br p-s h2 text"><a href="" style="padding: 0rem 0.2rem;" class="h2">Get started<i class="ri-arrow-right-s-line h2"></i></a></button> 
+                    <div>
+                        <input type="email" placeholder="Email Address" class="br font w600">
+                    </div>
+                    <div>
+                        <button style="border: none;"; class="started btn red br p-s w600 text"><a href="" style="padding: 0px 18px;" >Get started<i class="ri-arrow-right-s-line"></i></a></button> 
+                    </div>
                 </div>
             </div>
         </div>
@@ -79,15 +93,22 @@
         </div>
     </section>
     <div class="fourth container"></div>
+
+    
     <div class="repeat-email p-m">
-        <p class="h2 text" style="text-align: center;">Ready to watch? Enter your email to create or restart your membership.</p>
+        <p class="h2 text" style="text-align: center;">Ready to watch? <br> Enter your email to create or <br> restart your membership.</p>
         <div class="mail">
             <div class="email">
-                <input type="email" placeholder="Email Address" class="br font w600">
-                <button style="border: none; height: 100%;"; class=" btn red br p-s h2 text"><a href="" style="padding: 0rem 0.2rem;" class="h2">Get started<i class="ri-arrow-right-s-line h2"></i></a></button> 
+                <div style="height: 40px;">
+                    <input type="email" placeholder="Email Address" class="br font w600">
+                </div>
+                <div>
+                    <button style="border: none; height: 45px;"; class="started btn red br p-s w600 text"><a href="" style="padding: 0px 18px;" class="h2">Get started<i class="ri-arrow-right-s-line"></i></a></button> 
+                </div>
             </div>
         </div>
     </div>
+
     <div class="fifth container"></div>
 
     <footer>
