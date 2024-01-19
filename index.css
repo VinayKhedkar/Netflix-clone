@@ -195,15 +195,7 @@ section.first span
 {
     text-align: left;
 }
-.repeat-email
-{
-    width: 92vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+
 
 
 
@@ -308,15 +300,24 @@ footer a
     }    
 }
 
+.repeat
+{
+    height: 20vh;
+}
+
 @media screen and (max-width:600px) 
 {
     *
     {
-        flex-wrap: wrap;
-        flex-direction: column;
+        /* flex-wrap: wrap; */
+        /* flex-direction: column; */
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+    section.first, section.second, section.third
+    {
+        flex-direction: column;
     }
     html
     {
@@ -335,6 +336,7 @@ footer a
         text-align: left;
     }
 }
+
 
 @media screen and (max-width:426px) 
 {
@@ -398,5 +400,24 @@ footer a
         width: fit-content;
         padding: 3px 6px;
         height: 22px;
+    }
+}
+
+@media screen and (max-width:605px)
+{
+    .email input
+    {
+        width: 200px;
+    }
+
+    button.started a
+    {
+        font-size: 14px;
+    }
+
+    .email button
+    {
+        height: 32px;
+        position: relative;
     }
 }
