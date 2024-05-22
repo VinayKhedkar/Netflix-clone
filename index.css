@@ -300,11 +300,6 @@ footer a
     }    
 }
 
-.repeat
-{
-    height: 20vh;
-}
-
 @media screen and (max-width:600px) 
 {
     *
@@ -334,6 +329,14 @@ footer a
     input
     {
         text-align: left;
+    }
+}
+
+@media screen and (max-width:376px)
+{
+    .repeat
+    {
+        height: 20vh;
     }
 }
 
