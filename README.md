@@ -22,4 +22,4 @@ Frontend: **HTML, CSS**
 
 
 # Link: 
-https://vinaykhedkar.github.io/Netflix-clone/
+https://netflixclonee.netlify.app/
